@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
+    <title>Petshop On-line</title>
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src='jquery-1.8.3.min.js'></script>
+	<script src='jquery.elevatezoom.js'></script>
     <style>
-    ss
         .swiper-container {
             width: 100%;
             height: 100%;
         }
         .swiper-slide {
             display: flex;
-            height: 95vh;
+            height: 90vh;
             background: #ccc;
             justify-content: center;
             align-items: center;
@@ -27,7 +28,8 @@
     </style>
 </head>
 <body>
-        <div class="swiper-container"s>
+
+        <div class="swiper-container" id="slide">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./images/cach1.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="./images/cach2.jpeg" alt=""></div>
@@ -35,9 +37,53 @@
                 <div class="swiper-slide"><img src="./images/cach4.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="./images/cach5.jpg" alt=""></div>
             </div>
-            <div class="swiper-pagination"></div>    
         </div>
-        
+           
+              
+            <div class="swiper-pagination">
+        </div>
+        <ul class="nav justify-content-center" style="background-color: #7db7dd;">
+            <li class="nav-item">
+              <a class="nav-link active" href="#slide">Slide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#zoom_01">Disponiveis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <br>
+          <div class="container">
+            <!-- Content here -->
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam dolorum nihil accusamus doloremque laudantium, fugiat neque perferendis quae officia optio praesentium. Architecto excepturi exercitationem eius harum facilis consequuntur nulla?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi atque ratione pariatur similique veritatis quibusdam incidunt, sit quam nesciunt, harum ut ad architecto doloribus fugit enim reprehenderit mollitia assumenda repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam vel ullam unde cupiditate! Ratione tenetur explicabo voluptas ipsam, magnam dicta vel quae placeat earum eligendi quibusdam fugiat ab rerum!LoremLOREM Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse debitis sint repellat tempora recusandae obcaecati veritatis delectus rem sequi laboriosam? Facilis placeat eveniet pariatur eos. Dolorem nesciunt magnam rerum tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil quas facilis commodi, itaque aut, distinctio aliquam laudantium earum consequuntur, voluptates aperiam placeat velit quae eum harum reprehenderit obcaecati. Placeat!LoremLOREM Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex facilis, vitae iste blanditiis ipsum, excepturi quos possimus soluta sapiente doloribus impedit. Incidunt nisi dolorem natus cum sapiente velit et quibusdam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sequi esse quasi natus eos veritatis animi velit placeat voluptas sit! Soluta magni tempora corporis fugiat ea consequatur cupiditate ducimus natus!Lorem
+            <div class="card" style="width: 18rem;">
+                <img id="zoom_01" class="card-img-top" src='./images/small/husky-menor.jpg' data-zoom-image="images/large/cachlarge.jpg"/>
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Husky Siberiano</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <section style="background-color: #f0f3f5;">
+                <div class="container"></div>
+                <!-- Content here -->
+            <h1>Basic Zoom Example</h1>
+            <img id="zoom_01" src='images/small/image1.png' data-zoom-image="images/large/image1.jpg"/>
+                </div>
+            <section>
+            <script>
+                $('#zoom_01').elevateZoom({
+                zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+            }); 
+            </script>
 
     <script src="./js/swiper.min.js"></script>
     <script>
@@ -48,7 +94,7 @@
             }
         })
     </script>
-</head>
+
 <body>
       
 </body>
